@@ -1,0 +1,13 @@
+﻿{
+  "profiles": [
+    {
+      "id": "example-ue-game",
+      "name": "Example Unreal Engine game",
+      "installRoot": "C:/Games/ExampleGame",
+      "archivesPath": "C:/Games/ExampleGame/Game/Content/Paks",
+      "engineVersion": "GAME_UE5_LATEST",
+      "mappingsPath": null,
+      "recursiveArchiveSearch": false
+    }
+  ]
+}

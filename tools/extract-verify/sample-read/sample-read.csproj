@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <!-- Reuses the CUE4Parse build of the repository's MCP prototype (build tools/cue4parse-mcp in Release first). -->
+  <ItemGroup>
+    <Reference Include="CUE4Parse">
+      <HintPath>$(MSBuildThisFileDirectory)..\..\cue4parse-mcp\bin\Release\net10.0\CUE4Parse.dll</HintPath>
+      <Private>true</Private>
+    </Reference>
+    <Content Include="$(MSBuildThisFileDirectory)..\..\cue4parse-mcp\bin\Release\net10.0\*.dll">
+      <Link>%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+</Project>

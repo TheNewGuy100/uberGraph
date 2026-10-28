@@ -1,0 +1,16 @@
+{
+  "name": "vanillaplus-lua-check",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Syntax check for the VanillaPlus mod Lua files",
+  "scripts": {
+    "check": "node check-lua.js",
+    "test": "node test-logger.js && node test-bridge.js"
+  },
+  "dependencies": {
+    "luaparse": "^0.3.1"
+  },
+  "devDependencies": {
+    "fengari": "^0.1.5"
+  }
+}

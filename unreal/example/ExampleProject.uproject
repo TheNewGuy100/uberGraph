@@ -1,0 +1,38 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "5.8",
+	"Category": "",
+	"Description": "Example authoring project for uberGraph: cooked assets only; nothing here ships as native code. Copy it, rename it, point your game profile's editorProject at it.",
+	"Modules": [
+		{
+			"Name": "ExampleProject",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "PythonScriptPlugin",
+			"Enabled": true
+		},
+		{
+			"Name": "ModelContextProtocol",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "EditorToolset",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "AllToolsets",
+			"Enabled": true,
+			"Optional": true
+		},
+		{
+			"Name": "AndroidFileServer",
+			"Enabled": false
+		}
+	]
+}

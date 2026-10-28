@@ -1,0 +1,18 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1",
+	"FriendlyName": "uberGraph Editor Tools",
+	"Description": "Editor-only helpers for authoring cooked assets (for example creating a UMG animation and its binding, which Python cannot do). Never cooked into the mod.",
+	"Category": "Editor",
+	"CanContainContent": false,
+	"IsBetaVersion": true,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "UbergraphEditorTools",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}

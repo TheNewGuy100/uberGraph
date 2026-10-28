@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "id": "the-last-caretaker",
+  "name": "The Last Caretaker (Voyage)",
+  "_comment": "Example without local values. Copy to profiles/the-last-caretaker.local.json (ignored by git) and replace every <...>. Paths and hashes only: never content, keys or mappings.",
+  "game": {
+    "steamAppId": 1783560,
+    "buildId": 25982825,
+    "installRoot": "<GAME_INSTALL_ROOT>",
+    "exe": {
+      "path": "<GAME_INSTALL_ROOT>/Voyage/Binaries/Win64/VoyageSteam-Win64-Shipping.exe",
+      "sha256": "08228B72D4590F9B00E2171F252D618464C2E04B785237FE728DDDBF27D3B734"
+    },
+    "containers": {
+      "dir": "<GAME_INSTALL_ROOT>/Voyage/Content/Paks",
+      "format": "iostore",
+      "sizes": {
+        "global.ucas": 4034320,
+        "global.utoc": 386,
+        "pakchunk0-Windows.pak": 55771781,
+        "pakchunk0-Windows.ucas": 16826493072,
+        "pakchunk0-Windows.utoc": 6328938,
+        "pakchunk0optional-Windows.pak": 365,
+        "pakchunk0optional-Windows.ucas": 67934592,
+        "pakchunk0optional-Windows.utoc": 32196
+      }
+    }
+  },
+  "engine": {
+    "version": "5.8",
+    "editorBuild": "5.8.4",
+    "root": "<UE_EDITOR_ROOT>",
+    "retocVersion": "UE5_8",
+    "cue4parseGame": "GAME_UE5_LATEST"
+  },
+  "mappings": {
+    "path": "<USMAP_PATH>",
+    "sha256": null
+  },
+  "ue4ss": {
+    "dir": "<GAME_INSTALL_ROOT>/Voyage/Binaries/Win64/ue4ss",
+    "version": "3.0.1 beta"
+  },
+  "launch": {
+    "options": [
+      "-noraytracing"
+    ],
+    "notes": "-dx11 only while FSR is on (FSR FG crashes DX12 on the author's RTX 3060)"
+  },
+  "deploy": {
+    "allowedPaths": [
+      "<GAME_INSTALL_ROOT>/Voyage/Content/Paks/z*_P.*",
+      "<UE4SS_DIR>/Mods/<our mods>/",
+      "<UE4SS_DIR>/Mods/[uberGraph] Bridge/",
+      "<UE4SS_DIR>/Mods/[uberGraph] */",
+      "<UE4SS_DIR>/Mods/shared/UberGraphLog/"
+    ],
+    "backupDir": "<BACKUP_DIR>"
+  },
+  "editorProject": "unreal/example/ExampleProject.uproject",
+  "cook": {
+    "retoc": "<RETOC_EXE>",
+    "outDir": "<COOK_OUT_DIR>"
+  }
+}

@@ -1,0 +1,24 @@
+# Applied by GitNexus on top of .gitignore and its built-in list (build/out/logs/cache folders, images, binaries).
+# Goal: index only our own code and notes (mods, tools, plugin C++, Markdown), never game-derived or generated data.
+
+# Unreal project: generated, binary or art
+unreal/**/Content/
+unreal/**/Intermediate/
+unreal/**/Binaries/
+unreal/**/Saved/
+unreal/**/DerivedDataCache/
+unreal/**/SourceArt/
+
+# Game-derived or tool output
+analysis/artifacts/
+analysis/iostore-extract-*/
+tools/**/bin/
+tools/**/obj/
+**/pakstore*.json
+**/games.local.json
+*.usmap
+*.jmap
+
+profiles/*.local.json
+
+unreal/**/Plugins/*Stubs/
